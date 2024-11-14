@@ -7,7 +7,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  // Function to toggle dark mode
   const toggleTheme = () => {
     setDarkMode(!darkMode);
   };
