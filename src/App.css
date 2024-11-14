@@ -8,7 +8,7 @@ body.dark-mode {
 
 /* Light Mode (default) */
 body {
-  background-color: #f0f8ff; /* Light blue color */
+  background: linear-gradient(to bottom, #f0f8ff, #e0ffff); /* Gradient from light blue to light teal */
   color: #333; /* Dark text for readability */
 }
 
@@ -41,10 +41,20 @@ button:disabled {
 .advice-container {
   font-size: 18px;
   margin: 20px 0;
-  padding: 10px;
+  padding: 20px;
   background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* Rounded corners for a smoother look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+  max-width: 600px; /* Limit the max width */
+  margin-left: auto;
+  margin-right: auto; /* Center the container */
+}
+
+/* Hover effect to create interaction */
+.advice-container:hover {
+  transform: scale(1.02); /* Slightly enlarge the container when hovered */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for emphasis */
 }
 
 h1 {
@@ -56,7 +66,7 @@ h1 {
 body.dark-mode .advice-container {
   background-color: #444; /* Dark gray background for container */
   color: white; /* White text in dark mode for advice */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Darker shadow in dark mode */
 }
 
 body.dark-mode h1 {
