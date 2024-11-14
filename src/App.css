@@ -19,7 +19,11 @@ button {
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 10px; /* Space above each button */
+  width: 200px; /* Optional: gives a uniform width to buttons */
+  display: block; /* Makes buttons stack vertically */
+  margin-left: auto;
+  margin-right: auto; /* Center the buttons horizontally */
 }
 
 button:disabled {
